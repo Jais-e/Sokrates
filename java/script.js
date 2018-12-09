@@ -1,17 +1,25 @@
+
+
+
 $(document).ready(function(){
 
       // Script for horizontal scroll on mousewheel //
     $('.all-content').mousewheel(function(e, delta) {
-      this.scrollLeft -= (delta * 1000); e.preventDefault();
+      var x = $(window).width();
+      this.scrollLeft -= (delta * x); e.preventDefault();
     });
 
+    var menuPosition ;
+     $('.mobile-nav').click(function(){
+       if (menuPosition = 'down'){
+     $(this).animate({bottom: '0px'});
+     menuPosition = 'up';
+    }});
 
-
-    $('.mobile-nav').click(function(){
-     $(this).css({'bottom':'0px', 'height':'70%', 'width':'60%', 'left':'20%'});
-     console.log('click');
-});
-
-
+    $('#mobile-menu li a').click(function(){
+      if (menuPosition = 'up'){
+    $('.mobile-nav').animate({bottom: '-130px'});
+    menuPosition = 'down';
+  }});
 
   });
