@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Ranga|Reenie+Beanie">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="java/script.js">
 
 
@@ -27,25 +28,40 @@
 
 
 
-  <main class="wrapper">
+  <div class="wrapper">
+ <main class="all-content">
+    <!-- en article til hver "side" -->
     <article class="content "id="home">
-
-
     <section class="mobile-background-vid">
       <video autoplay muted loop id="ship-mobile">
-        <source src="video/mobile-cinemagraph-ship.mp4" type="video/mp4">
+        <source class="bg-video" src="video/mobile-cinemagraph-ship.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
     </section>
+
     <section class="desktop-background-vid">
       <video autoplay muted loop id="ship-desktop">
-        <source src="video/cinemagraph-ship2-1.mp4" type="video/mp4">
+        <source class="bg-video" src="video/cinemagraph-ship2-1.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
     </section>
     </article>
 
-    <article class="content "id="cafe">
+    <article class="content"id="cafe">
+
+      <section class="mobile-background-vid">
+        <video autoplay muted loop id="water-mobile">
+          <source class="bg-video" src="video/mobile-cinemagraph-water.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </section>
+
+      <section class="desktop-background-vid">
+        <video autoplay muted loop id="water-desktop">
+          <source class="bg-video" src="video/cinemagraph-water.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </section>
     </article>
 
     <article class="content "id="kutterlife">
@@ -53,6 +69,8 @@
 
     <article class="content "id="where-is-sokrates">
     </article>
+
+</main>
     <!-- navigation -->
     <nav class="nav">
 
@@ -67,8 +85,10 @@
 
 
     <!-- wrapper-->
-  </main>
-
+  </div>
+<footer>
+  <script src="java/mousewheel.js"></script>
+</footer>
 </body>
 
 </html>
