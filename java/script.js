@@ -6,4 +6,12 @@ $(document).ready(function(){
     });
 
 
+
+    $('.mobile-nav').click(function(){
+     $(this).css({'bottom':'0px', 'height':'70%', 'width':'60%', 'left':'20%'});
+     console.log('click');
+});
+
+
+
   });

@@ -10,6 +10,12 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+.brand{
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  z-index: 1;
+}
 .wrapper {
   position: relative;
   max-height: 100%;
@@ -26,10 +32,14 @@ body {
 
 .content{
 
-
 }
+#water-mobile2, #water-desktop2, #water-mobile4, #water-desktop4{
+  transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
 #ship-mobile {
-  
   right: 0;
   bottom: 0;
   z-index: -1;
@@ -40,23 +50,26 @@ body {
 }
 
 .desktop-background-vid{
+  width: 100vw;
   display: none;
 }
-
-.nav {
+.nav{
+  display: none;
+}
+.mobile-nav {
   background-image: url(../images/menubar.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  bottom: 0;
-  left: 30%;
-  width: 40%;
+  bottom: -200px;
+  left: 35%;
+  width: 30%;
 }
 
-#menu {
+#menu, #mobile-menu {
   padding-top: 80%;
 }
-#menu li, #menu a {
+#menu li,#mobile-menu li, #menu a, #mobile-menu a{
   list-style: none;
   text-decoration: none;
   color: white;
@@ -68,8 +81,17 @@ body {
   .desktop-background-vid{
     display: block;
   }
+  .mobile-nav{
+    display: none;
+  }
+
   .mobile-background-vid{
     display: none;
+  }
+  .brand{
+    width: 15%;
+    left: 5%;
+    z-index: 1;
   }
   .all-content{
     display: flex;
@@ -87,16 +109,20 @@ body {
     z-index: -1;
   }
   .nav {
+    display: block;
     background-image: url(../images/menubar.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 0;
+    bottom: -130px;
     left: 85%;
     width: 10%;
+    transition: all 0.5s;
   }
 
-
-
+.nav:hover{
+  cursor: pointer;
+  bottom: 0;
+}
 
 }

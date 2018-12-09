@@ -22,73 +22,132 @@
 <body>
   <header>
 
+    <!-- Logo -->
+    <nav>
+      <a href="#home"></hre><img class="brand" src="images/logoet.svg" alt="logo"></a>
+    </nav>
 
   </header>
-  <!-- baggrundsvideo -->
+
 
 
 
   <div class="wrapper">
- <main class="all-content">
-    <!-- en article til hver "side" -->
-    <article class="content "id="home">
-    <section class="mobile-background-vid">
-      <video autoplay muted loop id="ship-mobile">
-        <source class="bg-video" src="video/mobile-cinemagraph-ship.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-    </section>
+    <main class="all-content">
+      <!-- en article til hver "side" -->
+      <article class="content " id="home">
+        <!-- baggrundsvideo -->
+        <section class="mobile-background-vid">
+          <video autoplay muted loop id="ship-mobile1">
+            <source class="bg-video" src="video/mobile-cinemagraph-ship-compressed.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
 
-    <section class="desktop-background-vid">
-      <video autoplay muted loop id="ship-desktop">
-        <source class="bg-video" src="video/cinemagraph-ship2-1.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-    </section>
-    </article>
+        <section class="desktop-background-vid">
+          <video autoplay muted loop id="ship-desktop1">
+            <source class="bg-video" src="video/cinemagraph-ship2-1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
+      </article>
 
-    <article class="content"id="cafe">
+      <article class="content" id="about">
+        <!-- baggrundsvideo -->
+        <section class="mobile-background-vid">
+          <video autoplay muted loop id="water-mobile2">
+            <source class="bg-video" src="video/mobile-cinemagraph-water-compressed.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
 
-      <section class="mobile-background-vid">
-        <video autoplay muted loop id="water-mobile">
-          <source class="bg-video" src="video/mobile-cinemagraph-water.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      </section>
+        <section class="desktop-background-vid">
+          <video autoplay muted loop id="water-desktop2">
+            <source class="bg-video" src="video/cinemagraph-water.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
+      </article>
 
-      <section class="desktop-background-vid">
-        <video autoplay muted loop id="water-desktop">
-          <source class="bg-video" src="video/cinemagraph-water.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-      </section>
-    </article>
+      <article class="content " id="cafe">
+        <!-- baggrundsvideo -->
+        <section class="mobile-background-vid">
+          <video autoplay muted loop id="water-mobile3">
+            <source class="bg-video" src="video/mobile-cinemagraph-water-compressed.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
 
-    <article class="content "id="kutterlife">
-    </article>
+        <section class="desktop-background-vid">
+          <video autoplay muted loop id="water-desktop3">
+            <source class="bg-video" src="video/cinemagraph-water.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
+      </article>
 
-    <article class="content "id="where-is-sokrates">
-    </article>
+      <article class="content " id="kutterlife">
+        <!-- baggrundsvideo -->
+        <section class="mobile-background-vid">
+          <video autoplay muted loop id="water-mobile4">
+            <source class="bg-video" src="video/mobile-cinemagraph-water-compressed.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
 
-</main>
-    <!-- navigation -->
+        <section class="desktop-background-vid">
+          <video autoplay muted loop id="water-desktop4">
+            <source class="bg-video" src="video/cinemagraph-water.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
+      </article>
+
+      <article class="content " id="where-is-sokrates">
+        <!-- baggrundsvideo -->
+        <section class="mobile-background-vid">
+          <video autoplay muted loop id="water-mobile5">
+            <source class="bg-video" src="video/mobile-cinemagraph-water-compressed.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
+
+        <section class="desktop-background-vid">
+          <video autoplay muted loop id="water-desktop5">
+            <source class="bg-video" src="video/cinemagraph-water.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </section>
+      </article>
+
+    </main>
+
+    <!-- Main navigation -->
     <nav class="nav">
-
       <ul id="menu">
-        <li><a href="#">Skibet Sokrates</a></li>
-        <li><a href="#">Caféen</a></li>
-        <li><a href="#">#kutterlife</a></li>
-        <li><a href="#">Hvor er vi nu?</a></li>
+        <li><a href="#about">Skibet Sokrates</a></li>
+        <li><a href="#cafe">Caféen</a></li>
+        <li><a href="#kutterlife">#kutterlife</a></li>
+        <li><a href="#where-is-sokrates">Hvor er vi nu?</a></li>
       </ul>
 
+    </nav>
+
+    <nav class="mobile-nav">
+      <ul id="mobile-menu">
+        <li><a href="#about">Skibet Sokrates</a></li>
+        <li><a href="#cafe">Caféen</a></li>
+        <li><a href="#kutterlife">#kutterlife</a></li>
+        <li><a href="#where-is-sokrates">Hvor er vi nu?</a></li>
+      </ul>
     </nav>
 
 
     <!-- wrapper-->
   </div>
-<footer>
-  <script src="java/mousewheel.js"></script>
-</footer>
+  <footer>
+    <script src="java/mousewheel.js"></script>
+  </footer>
 </body>
 
 </html>
