@@ -23,6 +23,7 @@ body {
 }
 
 .all-content{
+  position: relative;
   display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
@@ -136,7 +137,18 @@ body {
     width: 8%;
     transition: all 0.5s;
   }
+.video-box{
+  position: relative;
+  width: 50%;
+  top: 5%;
+  left: 2%;
+  z-index: 1;
+}
+.video-box video{
+position: absolute;
+  max-width: 100%;
 
+}
 .nav:hover{
   cursor: pointer;
   bottom: 0;

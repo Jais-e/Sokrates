@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     $('#navigate').click(function(){
     $('.mobile-nav').animate({bottom: '0px'});
-    console.log('hej');
+
     });
 
     $('#mobile-menu li a').click(function(){
@@ -19,4 +19,5 @@ $(document).ready(function(){
      menuPosition = 'down';
      });
 
-  });
+
+})
