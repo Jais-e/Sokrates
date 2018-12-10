@@ -9,17 +9,14 @@ $(document).ready(function(){
       this.scrollLeft -= (delta * x); e.preventDefault();
     });
 
-    var menuPosition ;
-     $('.mobile-nav').click(function(){
-       if (menuPosition = 'down'){
-     $(this).animate({bottom: '0px'});
-     menuPosition = 'up';
-    }});
+    $('#navigate').click(function(){
+    $('.mobile-nav').animate({bottom: '0px'});
+    console.log('hej');
+    });
 
     $('#mobile-menu li a').click(function(){
-      if (menuPosition = 'up'){
-    $('.mobile-nav').animate({bottom: '-130px'});
-    menuPosition = 'down';
-  }});
+     $('.mobile-nav').animate({bottom: '-130px'});
+     menuPosition = 'down';
+     });
 
   });

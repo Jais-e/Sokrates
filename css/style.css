@@ -58,18 +58,22 @@ body {
   display: none;
 }
 .mobile-nav {
-  background-image: url(../images/menubar.png);
+  padding-top: 10px;
+  text-align: center;
+  background-image: url(../images/red-bar.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
   bottom: -130px;
-  left: 35%;
-  width: 30%;
+  left: 32.5%;
+  width: 35%;
 }
-
+.mobile-nav img{
+  max-width: 90%;
+}
 #menu, #mobile-menu {
   width: 100%;
-  padding: 85% 0 0 0;
+  padding: 10% 0 0 0;
   text-align: center;
 }
 #menu li,#mobile-menu li, #menu a, #mobile-menu a{
@@ -117,8 +121,10 @@ body {
     z-index: -1;
   }
   .nav {
+    padding-top: 10px;
+    text-align: center;
     display: block;
-    background-image: url(../images/menubar.png);
+    background-image: url(../images/red-bar.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
