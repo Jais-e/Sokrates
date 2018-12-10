@@ -57,6 +57,9 @@ body {
 .nav{
   display: none;
 }
+.nav img{
+  max-width: 90%;
+}
 .mobile-nav {
   padding-top: 10px;
   text-align: center;
