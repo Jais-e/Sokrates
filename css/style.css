@@ -88,27 +88,6 @@ body {
   font-size: 1.2em;
 }
 
-.video-box{
-  position: relative;
-  width: 100%;
-  top: 30%;
-  left: 2%;
-  z-index: 1;
-}
-.video-box video{
-position: absolute;
-  max-width: 100%;
-
-}
-
-    #intro-video {
-
-    }
-
-    #om-video {
-        left: 100vw;
-    }
-
 @media screen and (min-width: 760px) {
   .desktop-background-vid{
     display: block;
@@ -136,7 +115,7 @@ position: absolute;
   	overflow-x: auto;
   	width: 100%;
   	height: 100vh;
-    scroll-behavior: smooth;
+      scroll-behavior: smooth;
   }
   #ship {
     position: absolute;
@@ -158,61 +137,30 @@ position: absolute;
     width: 8%;
     transition: all 0.5s;
   }
-  .nav:hover{
-    cursor: pointer;
-    bottom: 0;
-  }
 .video-box{
   position: relative;
-
   width: 60%;
   top: 15%;
-
-
-  left: 15%;
-
-
-  width: 50%;
-  top: 5%;
-
-  width: 50%;
-  top: 5%;
-
   left: 2%;
-
   z-index: 1;
 }
 .video-box video{
 position: absolute;
   max-width: 100%;
-
 }
-
+    
     #intro-video {
         left: 20vw;
-
+        
     }
-
+    
     #om-video {
         left: 100vw;
-
-}
-
-    #intro-video {
-        left: 20vw;
-
+        
     }
-
-    #om-video {
-        left: 100vw;
-
-
-    }
-
 .nav:hover{
   cursor: pointer;
   bottom: 0;
 }
-
 
 }
