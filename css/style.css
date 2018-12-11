@@ -115,7 +115,7 @@ body {
   	overflow-x: auto;
   	width: 100%;
   	height: 100vh;
-    scroll-behavior: smooth;
+      scroll-behavior: smooth;
   }
   #ship {
     position: absolute;
@@ -137,21 +137,42 @@ body {
     width: 8%;
     transition: all 0.5s;
   }
+  .nav:hover{
+    cursor: pointer;
+    bottom: 0;
+  }
 .video-box{
   position: relative;
-  width: 50%;
-  top: 5%;
+  width: 60%;
+  top: 15%;
+
+  left: 15%;
+
   left: 2%;
+
   z-index: 1;
 }
 .video-box video{
 position: absolute;
   max-width: 100%;
-
 }
+
+
+
+
+    #intro-video {
+        left: 20vw;
+
+    }
+
+    #om-video {
+        left: 100vw;
+
+    }
 .nav:hover{
   cursor: pointer;
   bottom: 0;
 }
+
 
 }

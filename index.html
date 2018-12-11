@@ -8,13 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Ranga|Reenie+Beanie">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="java/script.js">
-
-
-  </script>
+  <script type="text/javascript" src="java/script.js"></script>
 
   <title>Skibscafé Sokrates</title>
 </head>
@@ -24,11 +20,10 @@
 
     <!-- Logo -->
     <nav>
-      <a href="#home"></hre><img class="brand" src="images/logoet.svg" alt="logo"></a>
+      <a href="#home"><img class="brand" src="images/logoet.svg" alt="logo"></a>
     </nav>
 
   </header>
-
 
 
 
@@ -54,11 +49,24 @@
 
       <article class="content" id="about">
         <!-- baggrundsvideo -->
+
+        <section class="video-box" id="video1">
+          <video id="hejVid">
+            <source src="video/hej.mp4" controls preload="auto" type="video/mp4">
+
         <section class="video-box">
-          <video>
+          <video id="intro-video">
             <source src="video/hej.mp4" type="video/mp4">
+
           </video>
         </section>
+          <section class="video-box">
+          <video id="om-video">
+            <source src="video/Omsokrates.mp4" type="video/mp4">
+          </video>
+          </section>
+
+
 
         <section class="mobile-background-vid">
           <video autoplay muted loop id="water-mobile2">
@@ -154,6 +162,7 @@
   </div>
   <footer>
     <script src="java/mousewheel.js"></script>
+    <script src="java/jquery-visible.js"></script>
   </footer>
 </body>
 
