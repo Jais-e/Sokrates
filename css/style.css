@@ -88,6 +88,27 @@ body {
   font-size: 1.2em;
 }
 
+.video-box{
+  position: relative;
+  width: 100%;
+  top: 30%;
+  left: 2%;
+  z-index: 1;
+}
+.video-box video{
+position: absolute;
+  max-width: 100%;
+    
+}
+    
+    #intro-video {
+        
+    }
+    
+    #om-video {
+        left: 100vw;
+    }
+
 @media screen and (min-width: 760px) {
   .desktop-background-vid{
     display: block;
