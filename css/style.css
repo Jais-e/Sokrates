@@ -164,17 +164,20 @@ position: absolute;
   }
 .video-box{
   position: relative;
-<<<<<<< HEAD
+
   width: 60%;
   top: 15%;
 
 
   left: 15%;
 
-=======
+
   width: 50%;
   top: 5%;
->>>>>>> parent of b5d1076... Lagt video ind og redigeret størrelser
+
+  width: 50%;
+  top: 5%;
+
   left: 2%;
 
   z-index: 1;
@@ -184,11 +187,6 @@ position: absolute;
   max-width: 100%;
 
 }
-<<<<<<< HEAD
-
-
-
-
 
     #intro-video {
         left: 20vw;
@@ -210,8 +208,7 @@ position: absolute;
 
 
     }
-=======
->>>>>>> parent of b5d1076... Lagt video ind og redigeret størrelser
+
 .nav:hover{
   cursor: pointer;
   bottom: 0;
