@@ -269,16 +269,15 @@ h2 {
 
   .text-field-desktop {
     display: block;
-
     flex-basis: 40%;
     height: auto;
-    max-height: 40%;
-    margin: 12% 0 0 0;
+    margin: 11% 0 0 0;
     background: rgba(254, 252, 235, 0.5);
     font-family: SegoePrint;
     line-height: 20px;
     font-size: 14px;
     z-index: 999;
+      border: 2px solid #8B4D48;
   }
 
   #history-desk {
@@ -297,7 +296,7 @@ h2 {
   }
 
   .video-medium{
-    margin-top: 30%;
+    margin-top: 29%;
   }
 
   .video-medium video{
