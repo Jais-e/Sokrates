@@ -75,14 +75,14 @@ h2{
   max-height: 100vh;
   min-width: 100%;
   background: url('../images/mobile-cinemagraph-ship.jpg') no-repeat;
-  background-size: contain;
+  background-size: cover;
 overflow-y: hidden;
 }
 .content2 {
   max-height: 100vh;
   min-width: 100%;
   background: url('../images/mobile-cinemagraph-water.jpg') no-repeat;
-  background-size: contain;
+  background-size: cover;
 overflow-y: hidden;
 }
 
