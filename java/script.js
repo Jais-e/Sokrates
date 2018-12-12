@@ -18,6 +18,15 @@ $(document).ready(function(){
      $('.mobile-nav').animate({bottom: '-130px'});
      menuPosition = 'down';
      });
+     // Make mobile menu slide down when clicking anywhere on page //
+         $(document).click(function() {
+         $('.mobile-nav').animate({bottom: '-130px'});
+         });
 
+         // Avoid mobile menu to slide down when clicking on icon //
+         $('#navigate').click(function(e) {
+        e.stopPropagation();
 
-})
+        });
+
+});
