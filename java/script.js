@@ -8,12 +8,12 @@ $(document).ready(function(){
       var x = $(window).width();
       this.scrollLeft -= (delta * x); e.preventDefault();
     });
-
+    // Animate mobile menu up when clicking on compas icon//
     $('#navigate').click(function(){
     $('.mobile-nav').animate({bottom: '0px'});
 
     });
-
+    // Animate mobile menu down when clicking menu item //
     $('#mobile-menu li a').click(function(){
      $('.mobile-nav').animate({bottom: '-130px'});
      menuPosition = 'down';
