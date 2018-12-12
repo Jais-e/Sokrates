@@ -172,11 +172,16 @@ overflow-y: hidden;
 
 @media screen and (min-width: 760px) {
   /* Roter hver anden baggrundsvideo */
-  #water-desktop2,#water-desktop4, #water-desktop6 {
+  #water-desktop2, #water-desktop5, #water-desktop7 {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /* Safari and Chrome */
     -moz-transform: rotateY(180deg); /* Firefox */
   }
+    /* Væk med "about2", da tekst og video på desktop skal være på samme "side" */
+    #about2 {display: none;}    
+    
+h2 {font-size: 2em;}
+    
   .swipe{
     display: none;
   }
@@ -199,7 +204,6 @@ overflow-y: hidden;
   .content, .content2{
     background: none;
   }
-
 
   .brand {
     width: 10%;
@@ -224,17 +228,28 @@ overflow-y: hidden;
     display: none;
   }
   .text-field-desktop{
+    display: block;
     margin:11% auto;
-    width: 50%;
-    height: 53%;
+    width: 40%;
+    height: 54%;
     overflow-y: scroll;
     background: rgba(254, 252, 235, 0.5);
     font-family: SegoePrint;
+    line-height: 20px;
+      font-size: 12px;
     z-index: 999;
   }
-  #history-desk{
-
-  }
+    
+    #about3 {display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;}
+    
+    #history-desk {}
+    
+    #about-video {
+    }
+  
   .mobile-nav {
     display: none;
   }
