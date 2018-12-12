@@ -40,7 +40,7 @@ body {
 
 }
 
-#water-mobile2, #water-desktop2, #water-mobile4, #water-desktop4{
+#water-mobile2, #water-desktop2, #water-mobile4, #water-desktop4, #water-mobile6, #water-desktop6{
   transform: rotateY(180deg);
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
