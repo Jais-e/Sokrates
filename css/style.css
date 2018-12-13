@@ -155,7 +155,7 @@ h2 {
 }
 
 /* Padding på tekstfelterne */
-#history, #history-desk, #okologi, #okologi-desk {
+#history, #history-desk, #kutter, #kutter-desk, #ordbog, #ordbog-desk {
   padding: 1%;
 }
 
@@ -218,6 +218,34 @@ h2 {
   cursor: pointer;
   float: right;
 }
+
+
+/* #kutterlife */
+
+#kutter {margin-top: 1%;
+height: 40%;}
+
+/* tabel */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {text-align: center;
+    border-collapse: collapse;
+width: 50%;}
+
+td {
+  text-align: left;
+  padding: 15px;
+}
+
+tr {width: 46%;
+margin: 2%;
+}
+
+tr:nth-child(even) {background-color: rgba(254, 252, 235, 0.5);}
+tr:nth-child(odd) {background-color: rgba(139, 77, 72, 0.5);}
 
 
 
