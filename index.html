@@ -3,14 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Ranga|Reenie+Beanie">
+  <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="java/script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 
   <title>Skibscafé Sokrates</title>
 </head>
@@ -123,7 +125,22 @@
         <!-- slut baggrundsvideo -->
         
         <section class="varer">
-        <img id="is" src="images/is.png" alt="is">
+        <!-- Trigger/Open The Modal -->
+<input type="image" src="images/is.png" id="is">
+
+<!-- The Modal -->
+<div id="isinfo" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">X</span>
+    <h2>Økologisk is fra Skarø</h2>
+    <p>
+Is fra Skarø er en serie økologisk is baseret på rene danske kvalitetsråvarer. Skarø is går op i bæredygtighed, og henter råvarer hos lokale producenter på Fyn. Isen er lavet på bl.a. birkesaft og sukkertang, som er en naturlig erstatning for sukker. Sukkertangen giver samtidig isen et strejf af det maritime og får isen til at smage udsøgt godt. Der er produceret fire kategorier af is: gourmet is, softice, yoghurtis og specialdesignet is. På Skibscafé Sokrates kan du vælge mellem 12 forskellige varianter, som jævnligt bliver skiftet ud, så det er garanteret, at der er en is til enhver smag.
+</p>
+    </div>
+       </div>
+        
         <img id="kaffe" src="images/kaffe.png" alt="kaffe">
         <img id="saft" src="images/saft.png" alt="saft">
         </section>
@@ -203,7 +220,7 @@
         <li><a href="#where-is-sokrates">Hvor er vi nu?</a></li>
       </ul>
     </nav>
-    <script src="java/mousewheel.js"></script>
+    <script src="js/mousewheel.js"></script>
     <div id="credit">Font made from <a href="http://www.onlinewebfonts.com">www.onlinewebfonts.com</a> is licensed by CC BY 3.0</div>
   </footer>
 </body>
