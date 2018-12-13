@@ -6,6 +6,7 @@
 body {
   overflow-y: hidden;
   font: SegoePrint 16px/20px Georgia, serif;
+    color: #4A7487;
 }
 
 #credit {
@@ -22,6 +23,8 @@ h1 {
   text-align: center;
   z-index: 12;
 }
+
+#forsidetitel {display: none;}
 
 h2 {
   font-family: Ranga;
@@ -126,10 +129,12 @@ h2 {
   border: 2px solid #8B4D48;
 }
 
+
 #intro-video {
   margin-top: -70%;
 }
 
+/* Tekst felterne */
 .text-field-mobile {
   margin-top: 52%;
   margin-left: 4%;
@@ -139,15 +144,28 @@ h2 {
   background: rgba(254, 252, 235, 0.5);
   font-family: SegoePrint;
   z-index: 999;
+    border: 2px solid #8B4D48;
 }
 
 .text-field-desktop {
   display: none;
 }
 
-#history, #history-desk {
+/* Padding på tekstfelterne */
+
+#history, #history-desk, #okologi, #okologi-desk {
   padding: 1%;
 }
+
+/* Café */
+
+.varer {margin-top: 50%;}
+
+#is, #kaffe, #saft {width: 20%; 
+margin-left: 7%;}
+
+#kaffe {margin-bottom: -10%;}
+#is {margin-bottom: 8%;}
 
 /* Navigation */
 .nav {
@@ -189,6 +207,7 @@ h2 {
   font-size: 1.2em;
 }
 
+/* Siden på skærme større end 760px */
 @media screen and (min-width: 760px) {
 
   /* Roter hver anden baggrundsvideo */
@@ -200,8 +219,8 @@ h2 {
     /* Firefox */
   }
 
-  /* Væk med "about2", da tekst og video på desktop skal være på samme "side" */
-  #about2 {
+  /* Væk med "about2" og "cafe2"*/
+  #about2, #cafe2 {
     display: none;
   }
 
