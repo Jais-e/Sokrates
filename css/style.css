@@ -6,7 +6,7 @@
 body {
   overflow-y: hidden;
   font: SegoePrint 16px/20px Georgia, serif;
-    color: #4A7487;
+  color: #4A7487;
 }
 
 #credit {
@@ -24,7 +24,9 @@ h1 {
   z-index: 12;
 }
 
-#forsidetitel {display: none;}
+#forsidetitel {
+  display: none;
+}
 
 h2 {
   font-family: Ranga;
@@ -108,18 +110,20 @@ h2 {
   width: 100%;
   z-index: 2;
 }
+
 .video-medium {
   margin-top: 70%;
   margin-left: 0;
   width: 100%;
   z-index: 2;
 }
+
 .video-medium video {
   max-width: 100%;
   box-sizing: border-box;
   border: 2px solid #8B4D48;
-
 }
+
 /* Videoer */
 .video-big video {
   width: 98%;
@@ -128,7 +132,6 @@ h2 {
   box-sizing: border-box;
   border: 2px solid #8B4D48;
 }
-
 
 #intro-video {
   margin-top: -70%;
@@ -144,7 +147,7 @@ h2 {
   background: rgba(254, 252, 235, 0.5);
   font-family: SegoePrint;
   z-index: 999;
-    border: 2px solid #8B4D48;
+  border: 2px solid #8B4D48;
 }
 
 .text-field-desktop {
@@ -152,37 +155,51 @@ h2 {
 }
 
 /* Padding på tekstfelterne */
-
 #history, #history-desk, #okologi, #okologi-desk {
   padding: 1%;
 }
 
 /* Café */
+.varer {
+  margin-top: 50%;
+}
 
-.varer {margin-top: 50%;}
+#is, #kaffe, #saft {
+  width: 20%;
+  margin-left: 7%;
+}
 
-#is, #kaffe, #saft {width: 20%; 
-margin-left: 7%;}
+#kaffe {
+  margin-bottom: -10%;
+}
 
-#kaffe {margin-bottom: -10%;}
-#is {margin-bottom: 8%;}
-
+#is {
+  margin-bottom: 8%;
+}
 
 /*Pop up box til produkterne */
-
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9999;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -192,28 +209,22 @@ margin-left: 7%;}
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-    font-family: Segoe Print;
+  font-family: Segoe Print;
+  margin-bottom: 35%;
 }
 
 /* The Close Button */
-.close {
-  color: #8B4D48;
+.close-btn {
+  cursor: pointer;
   float: right;
-  font-size: 50px;
-  font-weight: bold;
-    font-family: Cabin Sketch;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+
 
 /* Navigation */
 .nav {
   display: none;
+  z-index: 10;
 }
 
 .nav img {
@@ -313,41 +324,37 @@ margin-left: 7%;}
     height: 100vh;
   }
 
-
-
   .text-field-mobile {
     display: none;
   }
 
-
-
   .flex {
     width: 100%;
-    height:100%;
     display: flex;
     flex-direction: row;
+    flex: 1;
     justify-content: space-around;
     flex-wrap: nowrap;
   }
 
   .text-field-desktop {
     display: block;
-    flex-basis: 40%;
-    height: auto;
     margin: 11% 0 0 0;
-    background: rgba(254, 252, 235, 0.5);
-    font-family: SegoePrint;
-    line-height: 20px;
-    font-size: 14px;
-    z-index: 999;
-      border: 2px solid #8B4D48;
+    z-index: 9;
   }
 
   #history-desk {
-
+    font-family: SegoePrint;
+    line-height: 20px;
+    font-size: 14px;
+    border: 2px solid #8B4D48;
+    background: rgba(254, 252, 235, 0.5);
+    flex-basis: 40%;
+    overflow-y: scroll;
   }
+
   .video-flex {
-  flex-basis: 38%;
+    flex-basis: 38%;
   }
 
   .video-big {
@@ -358,11 +365,11 @@ margin-left: 7%;}
     margin-left: 25%;
   }
 
-  .video-medium{
+  .video-medium {
     margin-top: 29%;
   }
 
-  .video-medium video{
+  .video-medium video {
     max-width: 100%;
   }
 
