@@ -3,6 +3,36 @@
   src: url("../SegoePrintV1.woff") format('woff');
 }
 
+@keyframes floating {
+  0%{
+    margin-left: 20%;
+  }
+  50%{
+    margin-left: 20.1%;
+    margin-bottom: -2px;
+  }
+  100%{
+    margin-left: 20%;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes bloat{
+  0%{
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50%{
+    transform: scale(1.02);
+    filter: brightness(1.1);
+
+  }
+  100%{
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
 body {
   overflow-y: hidden;
   font: SegoePrint 16px/20px Georgia, serif;
@@ -21,7 +51,7 @@ h1 {
   font-family: Cabin Sketch;
   width: 100%;
   text-align: center;
-  z-index: 12;
+  z-index: 1;
 }
 
 #forsidetitel {
@@ -58,8 +88,9 @@ h2 {
   position: absolute;
   width: 50%;
   left: 25%;
-  z-index: 2;
+  z-index: 9999
 }
+
 
 /*pil på forsiden*/
 .swipe {
@@ -91,9 +122,14 @@ h2 {
 .content2 {
   max-height: 100vh;
   min-width: 100%;
-  background: url('../images/mobile-cinemagraph-water.jpg') no-repeat;
+  background: url('../images/mobile-cinemagraph-water-reversed.jpg') no-repeat;
   background-size: cover;
   overflow-y: hidden;
+}
+
+#about2, #cafe, #kutterlife, #where-is-sokrates {
+  background: url('../images/mobile-cinemagraph-water.jpg') no-repeat;
+  background-size: cover;
 }
 
 /* forside baggrund mobil */
@@ -162,6 +198,7 @@ h2 {
 /* Café */
 .varer {
   margin-top: 50%;
+  margin-left: 8%;
 }
 
 #is, #kaffe, #saft {
@@ -219,11 +256,11 @@ h2 {
   float: right;
 }
 
-
-/* #kutterlife */
-
-#kutter {margin-top: 1%;
-height: 40%;}
+/* #kutterlife mobil*/
+#kutter {
+  margin-top: 1%;
+  height: 40%;
+}
 
 /* tabel */
 table {
@@ -231,23 +268,28 @@ table {
   width: 100%;
 }
 
-th {text-align: center;
-    border-collapse: collapse;
-width: 50%;}
+th {
+  text-align: center;
+  border-collapse: collapse;
+  width: 50%;
+}
 
 td {
   text-align: left;
   padding: 15px;
 }
 
-tr {width: 46%;
-margin: 2%;
+tr {
+  width: 46%;
+  margin: 2%;
 }
-
-tr:nth-child(even) {background-color: rgba(254, 252, 235, 0.5);}
-tr:nth-child(odd) {background-color: rgba(139, 77, 72, 0.5);}
-
-
+/* Hver anden tabelrækkes baggrundsfarver */
+tr:nth-child(even) {
+  background-color: rgba(254, 252, 235, 0.5);
+}
+tr:nth-child(odd) {
+  background-color: rgba(139, 77, 72, 0.5);
+}
 
 /* Navigation */
 .nav {
@@ -258,18 +300,22 @@ tr:nth-child(odd) {background-color: rgba(139, 77, 72, 0.5);}
 .nav img {
   max-width: 90%;
 }
-
+.nav-icon{
+  animation-name: bloat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 .mobile-nav {
   padding-top: 10px;
   text-align: center;
   background-image: url(../images/red-bar.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: fixed;
   z-index: 2;
-  bottom: -130px;
-  left: 32.5%;
-  width: 35%;
+  bottom: -200px;
+  left: 40%;
+  width: 20%;
 }
 
 .mobile-nav img {
@@ -292,6 +338,23 @@ tr:nth-child(odd) {background-color: rgba(139, 77, 72, 0.5);}
 
 /* Siden på skærme større end 760px */
 @media screen and (min-width: 760px) {
+  h1{
+    z-index: 0;
+  }
+  .brand img{
+    z-index: 10;
+  }
+  .headline {
+    position: absolute;
+    font-size: 5em;
+    padding: 0;
+    top: 10%;
+  }
+
+  #about2, #cafe, #kutterlife, #where-is-sokrates {
+    background: url('../video/cinemagraph-water-compressed.mp4') no-repeat;
+    background-size: cover;
+  }
 
   /* Roter hver anden baggrundsvideo */
   #water-desktop2, #water-desktop5, #water-desktop7 {
@@ -350,8 +413,14 @@ tr:nth-child(odd) {background-color: rgba(139, 77, 72, 0.5);}
     flex-wrap: nowrap;
     overflow-x: auto;
     height: 100vh;
+    scroll-behavior: smooth;
   }
 
+  .modal-content {
+  margin-top: 5%;
+  width: 25%;
+
+  }
   .text-field-mobile {
     display: none;
   }
@@ -369,18 +438,46 @@ tr:nth-child(odd) {background-color: rgba(139, 77, 72, 0.5);}
     display: block;
     margin: 11% 0 0 0;
     z-index: 9;
+    border: 2px solid #8B4D48;
+    background: rgba(254, 252, 235, 0.5);
   }
-
+  #kutter-desk{
+    width: 60%;
+    margin-left:20%;
+    font-family: SegoePrint;
+    line-height: 20px;
+    font-size: 14px;
+  }
   #history-desk {
     font-family: SegoePrint;
     line-height: 20px;
     font-size: 14px;
-    border: 2px solid #8B4D48;
-    background: rgba(254, 252, 235, 0.5);
+
     flex-basis: 40%;
     overflow-y: scroll;
   }
+  .varer {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    margin-left: 20%;
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  }
 
+  #is, #kaffe, #saft {
+    width: 5%;
+    margin-left: 7%;
+  }
+
+  #kaffe {
+    margin-bottom: -2%;
+  }
+
+  #is {
+    margin-bottom: 4%;
+  }
   .video-flex {
     flex-basis: 38%;
   }

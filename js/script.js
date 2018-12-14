@@ -16,29 +16,34 @@ $(document).ready(function() {
   // Script for horizontal scroll on mousewheel //
   $('.all-content').mousewheel(function(e, delta) {
     var x = $(window).width();
-    this.scrollLeft -= (delta * (x / 2));
+    this.scrollLeft -= (delta * 40);
     e.preventDefault();
   });
   // Animate mobile menu up when clicking on compas icon//
   $('#navigate').click(function() {
     $('.mobile-nav').animate({
-      bottom: '0px'
-    });
-
+      bottom: '0px',
+      width: '35%',
+      left: '32.5%'
+    }, 200);
+    $('.mobile-nav').css('background-size', 'cover');
   });
+
   // Animate mobile menu down when clicking menu item //
   $('#mobile-menu li a').click(function() {
     $('.mobile-nav').animate({
-      bottom: '-130px'
+      bottom: '-200px', width: '20%', left: '40%'
+
     });
-    menuPosition = 'down';
+    $('.mobile-nav').css('background-size', 'contain');
   });
 
   // Make mobile menu slide down when clicking anywhere on page //
   $(document).click(function() {
     $('.mobile-nav').animate({
-      bottom: '-130px'
+      bottom: '-200px', width: '20%', left: '40%'
     });
+    $('.mobile-nav').css('background-size', 'contain');
   });
 
   // Avoid mobile menu to slide down when clicking on icon //
