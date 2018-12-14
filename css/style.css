@@ -154,12 +154,14 @@ h2 {
   z-index: 2;
 }
 
-.video-medium video {
+.video-medium video, .video-small video {
   max-width: 100%;
   box-sizing: border-box;
   border: 2px solid #8B4D48;
 }
-
+.video-small{
+  display: none;
+}
 /* Videoer */
 .video-big video {
   width: 98%;
@@ -458,16 +460,16 @@ tr:nth-child(odd) {
   }
   .varer {
     position: absolute;
-    width: 100%;
+    width: 50%;
     bottom: 7%;
-    margin-left: 20%;
+    margin-left:70%;
   animation-name: floating;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   }
 
   #is, #kaffe, #saft {
-    width: 7%;
+    width: 20%;
     margin-left: 7%;
   }
 
@@ -495,13 +497,24 @@ tr:nth-child(odd) {
   }
 
   .video-medium {
+
     margin-top: 29%;
   }
 
   .video-medium video {
     max-width: 100%;
   }
-
+.video-small{
+  display: block;
+  position: absolute;
+  width: 30%;
+  z-index: 9;
+  top: 25%;
+  margin-left: 20%;
+}
+.video-small video {
+  max-width: 100%;
+}
   .mobile-nav {
     display: none;
   }
