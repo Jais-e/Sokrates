@@ -16,7 +16,7 @@ $(document).ready(function() {
   // Script for horizontal scroll on mousewheel //
   $('.all-content').mousewheel(function(e, delta) {
     var x = $(window).width();
-    this.scrollLeft -= (delta * 40);
+    this.scrollLeft -= (delta * x);
     e.preventDefault();
   });
   // Animate mobile menu up when clicking on compas icon//
