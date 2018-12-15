@@ -9,7 +9,10 @@ $(document).ready(function() {
     backgroundVideo.addEventListener('canplaythrough',function(){
       this.play();
     });
-
+    var backgroundVideo = document.getElementById('water-desktop2');
+      backgroundVideo.addEventListener('canplaythrough',function(){
+        this.play();
+      });
   // Script for horizontal scroll on mousewheel //
   $('.all-content').mousewheel(function(e, delta) {
     var x = $(window).width();
@@ -78,5 +81,27 @@ $(document).ready(function() {
     $('.vareinfo').hide();
   });
 
+// NOT working inviewport functionality //
+/*
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
 
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+
+  $(window).on('scroll', function() {
+    var vid1 = document.getElementById('intro-video');
+    $(vid1).each(function() {
+      if ($(this).isInViewport()) {
+        $(this).get(0).play();
+      } else {
+
+      }
+    });
+  });
+*/
 });
