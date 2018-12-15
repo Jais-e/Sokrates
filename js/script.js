@@ -1,14 +1,4 @@
-var vareinfo = [
 
-  // is info //
-  ['<img class="close-btn" src="images/close.png">', '<h2>Økologisk is fra Skarø</h2>', '<img src="images/is.png">', '<p>Is fra Skarø er en serie økologisk is baseret på rene danske kvalitetsråvarer. Skarø is går op i bæredygtighed, og henter råvarer hos lokale producenter på Fyn. Isen er lavet på bl.a. birkesaft og sukkertang, som er en naturlig erstatning for sukker. Sukkertangen giver samtidig isen et strejf af det maritime og får isen til at smage udsøgt godt. Der er produceret fire kategorier af is: gourmet is, softice, yoghurtis og specialdesignet is. På SkibscaféSokrates kan du vælge mellem 12 forskellige varianter, som jævnligt bliver skiftet ud, så det er garanteret, at der er en is til enhver smag.</p>'],
-
-  // Kaffe info //
-  ['<img class="close-btn" src="images/close.png">', '<h2>Kaffe varm som kold</h2>', '<img src="images/kaffe.png">', '<p>På Skibscafé Sokrates kan du få både filterkaffe, espresso og en lækker frappé. Frappé’en er en helt speciel opskrift, jeg har fået fra en ældre dame, der mente at min iskaffe ikke var god nok, og hun har helt bestemt ret, denne frappé er helt sikker bedre og værd at prøve. Al kaffen er økologisk. </p>'],
-
-  // Saft info //
-  ['<img class="close-btn" src="images/close.png">', '<h2>Lækker økologisk saft</h2>', '<img src="images/saft.png">', '<p>Er der noget bedre end et glas kold saft i sommervarmen? Hos Skibscafé Sokrates serveres der saft med og uden brus. Varianterne bliver løbende skiftet ud, det samme med mærket, men saften er altid økologisk.</p>']
-];
 
 
 $(document).ready(function() {
@@ -54,26 +44,32 @@ $(document).ready(function() {
 
 
   // Product pop-up //
+
+
   $('#is').click(function() {
-    $('.modal-content').html(vareinfo[0]);
-    $('.modal').fadeIn(300).show();
+    console.log('is');
+    $('#is').css('visibility', 'hidden');
+    $('#isinfo').fadeIn(300).show();
   });
 
   $('#kaffe').click(function() {
-    $('.modal-content').html(vareinfo[1]);
-    $('.modal').fadeIn(300).show();
+    console.log('kaffe');
+    $('#kaffe').css('visibility', 'hidden');
+    $('#kaffeinfo').fadeIn(300).show();
   });
 
   $('#saft').click(function() {
-    $('.modal-content').html(vareinfo[2]);
-    $('.modal').fadeIn(300).show();
+    console.log('saft');
+    $('#saft').css('visibility', 'hidden');
+    $('#saftinfo').fadeIn(300).show();
 
   });
+
   // Close product pop-up - HVORFOR FANDEN VIRKER DET IKKE????? ARRRRRRRRRRGHHHHHHHHHHHH!!!!!!!!//
   $('.close-btn').click(function() {
+    $('#is, #kaffe, #saft').css('visibility', 'visible');
     console.log('hej');
-    $('.modal').css('display', 'none');
-    $('.modal-content').html("");
+    $('.vareinfo').hide();
   });
 
   // pop up boks til produkter //
