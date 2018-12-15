@@ -545,6 +545,7 @@ tr:nth-child(odd) {
 }
 .video-group video{
   max-width: 100%;
+  border: 2px solid #8B4D48;
 }
 #stories-headline{
   width: 25%;
