@@ -69,9 +69,7 @@ h2 {
 }
 
 /* Skjul scrollbar*/
-::-webkit-scrollbar {
-  display: none;
-}
+
 
 /* Skjul overskrifter */
 .headline {
@@ -121,10 +119,15 @@ h2 {
 
 .content2 {
   max-height: 100vh;
+
   min-width: 100%;
   background: url('../images/mobile-cinemagraph-water-reversed.jpg') no-repeat;
   background-size: cover;
   overflow-y: hidden;
+}
+
+#cafe2{
+  display: none;
 }
 
 #about2, #cafe, #kutterlife, #where-is-sokrates {
@@ -159,9 +162,11 @@ h2 {
   box-sizing: border-box;
   border: 2px solid #8B4D48;
 }
+
 .video-small{
   display: none;
 }
+
 /* Videoer */
 .video-big video {
   width: 98%;
@@ -189,9 +194,12 @@ h2 {
 }
 
 .text-field-desktop {
+
   display: none;
 }
-
+.text-field-desktop::-webkit-scrollbar {
+  display: none;
+}
 /* Padding på tekstfelterne */
 #history, #history-desk, #kutter, #kutter-desk, #ordbog, #ordbog-desk {
   padding: 1%;
@@ -335,9 +343,9 @@ tr:nth-child(odd) {
   }
   .headline {
     position: absolute;
-    font-size: 5em;
+    font-size: 4em;
     padding: 0;
-    top: 10%;
+    top: 5%;
   }
 
   #about2, #cafe, #kutterlife, #where-is-sokrates {
@@ -346,7 +354,7 @@ tr:nth-child(odd) {
   }
 
   /* Roter hver anden baggrundsvideo */
-  #water-desktop2, #water-desktop5, #water-desktop7 {
+  #water-desktop2, #water-desktop5, #water-desktop7, #water-desktop9 {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     /* Safari and Chrome */
@@ -355,7 +363,7 @@ tr:nth-child(odd) {
   }
 
   /* Væk med "about2" og "cafe2"*/
-  #about2, #cafe2 {
+  #about2 {
     display: none;
   }
 
@@ -431,12 +439,12 @@ tr:nth-child(odd) {
     margin-left:20%;
     font-family: SegoePrint;
     line-height: 20px;
-    font-size: 14px;
+
   }
   #history-desk {
     font-family: SegoePrint;
     line-height: 20px;
-    font-size: 14px;
+
 
     flex-basis: 40%;
     overflow-y: scroll;
@@ -519,6 +527,60 @@ tr:nth-child(odd) {
   z-index: 9;
   top: 28%;
   margin-left: 15%;
+}
+
+#cafe2{
+  display: block;
+  z-index: 0;
+}
+
+.video-group{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 2;
+  top: 0%;
+  left: 0;
+}
+.video-group video{
+  max-width: 100%;
+}
+#stories-headline{
+  width: 25%;
+  position: absolute;
+  top: 38%;
+  left: 35%;
+  font-size: 2.5em;
+}
+#mood-desk{
+  position: absolute;
+  padding: 1%;
+  width: 20%;
+  top: 0;
+  left: 70%;
+  font-family: Segoe Print;
+  overflow: auto;
+}
+#story1{
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  left:40%;
+
+}
+#story2{
+
+position: absolute;
+width: 20%;
+top: 30%;
+left:15%;
+}
+#story3{
+  position: sticky;
+  width: 20%;
+  top: 60%;
+  left:40%;
 }
 .video-small video {
   max-width: 100%;

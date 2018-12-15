@@ -1,7 +1,14 @@
 
 
 
+
 $(document).ready(function() {
+
+  // play video even if whole file is not loaded //
+  var backgroundVideo = document.getElementById('ship-desktop1');
+    backgroundVideo.addEventListener('canplaythrough',function(){
+      this.play();
+    });
 
   // Script for horizontal scroll on mousewheel //
   $('.all-content').mousewheel(function(e, delta) {
@@ -71,5 +78,5 @@ $(document).ready(function() {
     $('.vareinfo').hide();
   });
 
-  
+
 });
