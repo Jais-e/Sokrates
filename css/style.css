@@ -197,7 +197,7 @@ h2 {
 
   display: none;
 }
-.text-field-desktop::-webkit-scrollbar {
+.text-field-desktop::-webkit-scrollbar, .text-field-mobile::-webkit-scrollbar {
   display: none;
 }
 /* Padding på tekstfelterne */
