@@ -43,75 +43,33 @@ $(document).ready(function() {
   });
 
 
-  // Product pop-up //
+  // Product pop-ups //
 
-
+  // Isinfo pop-up + skjul"knap" //
   $('#is').click(function() {
     console.log('is');
     $('#is').css('visibility', 'hidden');
     $('#isinfo').fadeIn(300).show();
   });
-
+// Kaffeinfo pop-up + skjul"knap" //
   $('#kaffe').click(function() {
     console.log('kaffe');
     $('#kaffe').css('visibility', 'hidden');
     $('#kaffeinfo').fadeIn(300).show();
   });
-
+// Saftinfo pop-up + skjul"knap" //
   $('#saft').click(function() {
     console.log('saft');
     $('#saft').css('visibility', 'hidden');
     $('#saftinfo').fadeIn(300).show();
 
   });
-
-  // Close product pop-up - HVORFOR FANDEN VIRKER DET IKKE????? ARRRRRRRRRRGHHHHHHHHHHHH!!!!!!!!//
+  // Close product pop-up - og gør "knap" synlig igen//
   $('.close-btn').click(function() {
     $('#is, #kaffe, #saft').css('visibility', 'visible');
     console.log('hej');
     $('.vareinfo').hide();
   });
 
-  // pop up boks til produkter //
-  /*
-      // Get the modal
-  var modal = document.getElementById('isinfo');
-  var modal2 = document.getElementById('kaffeinfo');
-  // Get the button that opens the modal
-  var btn = document.getElementById("is");
-  var btn2 = document.getElementById("kaffe");
-  var btn3 = document.getElementById("saft");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  var span2 = document.getElementsByClassName("close")[0];
-  var span3 = document.getElementsByClassName("close")[0];
-
-  // When the user clicks the button, open the modal
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  btn2.onclick = function() {
-    modal2.style.display = "block";
-  }
-  btn3.onclick = function() {
-    modal3.style.display = "block";
-  }
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  span2.onclick = function() {
-    modal2.style.display = "none";
-  }
-  span3.onclick = function() {
-    modal3.style.display = "none";
-  }
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";modal2.style.display = "none";modal3.style.display = "none";
-    }
-  }
-  */
+  
 });
