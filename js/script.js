@@ -82,7 +82,7 @@ $(document).ready(function() {
   });
 
 
-// NOT working inviewport functionality //
+// NOT working in viewport autoplay functionality //
 /*
   $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
