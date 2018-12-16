@@ -81,6 +81,7 @@ $(document).ready(function() {
     $('.vareinfo').hide();
   });
 
+
 // NOT working inviewport functionality //
 /*
   $.fn.isInViewport = function() {

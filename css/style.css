@@ -353,6 +353,37 @@ tr:nth-child(odd) {
     max-width: 100%;
   }
 
+/* Scrollbar styling */
+  ::-webkit-scrollbar{
+      height: 10px;
+      background: rgba(0,0,0,0.1);
+      opacity: 0.1;
+  }
+::-webkit-scrollbar-button{
+  background: rgba(0,0,0,0.1);
+}
+  ::-webkit-scrollbar-track {
+
+      border-radius: 3px;
+      background: rgba(0,0,0,0.1);
+  }
+::-webkit-scrollbar-track-piece{
+  background: rgba(0,0,0,0.1);
+}
+  ::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      -webkit-box-shadow: inset 0 0 6px rgba(139, 77, 73, 0.5);
+      background: rgba(139, 77, 73, 0.9);
+    }
+  ::-webkit-scrollbar-corner{
+    background: rgba(0,0,0,0.1);
+  }
+  ::-webkit-resizer{
+    background: rgba(0,0,0,0.1);
+
+  }
+
+
   /* baggrunde */
   .desktop-background-vid {
     position: absolute;
