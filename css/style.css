@@ -355,8 +355,8 @@ tr:nth-child(odd) {
 
 /* Scrollbar styling */
   ::-webkit-scrollbar{
-      height: 10px;
-      background: rgba(0,0,0,0.1);
+      height: 8px;
+      background: rgba(37, 54, 140, 0.5);
       opacity: 0.1;
   }
 ::-webkit-scrollbar-button{
